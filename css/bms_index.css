@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+container {
+    padding-left: 20px ;
+    padding-right: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: relative;
+    width:95%; height: 360px;
+    margin: 1% 2% 0 2%;  padding: 1%;
+    border:1px solid lightgray;
+    background-image: url("../rc/bms_titlebg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: aliceblue;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-family: 'Helvetica Neue'; 
+    text-align: right;
+    font-size: 44px;
+    line-height: 50px;
+    padding: 20px;
+}
+
+header h1 > a { text-decoration: none; }
+header h1 > a.link { text-decoration: none; }
+header h1 > a.visited { text-decoration: none; }
+
+header h1 > a.title {
+    color:white;
+    text-shadow: 2px 2px 6px gray;
+}
+
+article {
+    float:left; width:70%; height:auto;
+    margin: 10px 0px 10px 2%; padding: 1%;
+    border-right: 1px solid lightgray;
+}
+
+aside {
+    float:right; width:21%; height:auto;
+    margin: 10px 2% 10px 0px; padding: 1%;
+}
+
+footer {
+    clear:both; width:95%; height:5%;
+    margin:0 2% 10px 2%; padding: 1%;
+    border-top: 1px solid lightgray;
+}
+
+b select {
+    border-bottom: 4px solid #90bbff;
+}
+
+.youtube {
+    font-family: 'Helvetica'; 
+    text-align: right;
+    font-size: 20px;
+    margin : 5px;
+    padding: 10px 5px 10px 5px;
+}
+
+.youtube > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+    transition: color .3s ease-in-out;
+}
+.youtube > a:hover {
+    text-decoration: none;
+    color: red;
+}
+.youtube > a:link {
+    text-decoration: none;
+}
+.youtube > a:visited {
+    text-decoration: none;
+}
+
+h1.title {
+    font-family: 'Helvetica Neue'; 
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    margin :0px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-bottom: 1px solid lightblue;
+}
+
+.menu {
+    margin: 10px 5px 0px 5px;
+    padding: 0px;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+}
+
+.menuItem {
+    font-family: 'Helvetica Neue'; 
+    font-size: 17.5px;
+    line-height: 17.5px;
+    text-align: right;
+    color: gray;
+    background-color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.menuItem, .menuItem > a {
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    transition: background .2s ease-in-out;
+}
+
+.menuItem:hover {
+    background-color: lightgray;
+}
+
+.menuItem:hover > a:hover {
+    color: black;
+}
+
+.menuItem > a:link {
+    color: gray;
+}
+
+.menuItem > a:visited {
+    color: gray;
+}
+
+.select {
+    color: black;
+    background-color: ghostwhite;
+}
+
+ul li {
+    list-style: none;
+}
+
+.pageTitle{
+    font-family: 'Helvetica';
+    font-size: 30px;
+    font-weight: bold;
+    margin:5px; padding:0px 5px 10px 0px;
+}
+
+#comment {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.tableComment {
+    margin-top: 20px; margin-bottom: 20px;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul.difftable {
+    margin-top: 0px; margin-bottom: 20px;
+    font-size: 17.5px;
+    padding-left: 25px;
+}
+
+#tableSPN {
+    color: #d3d3d3;
+}
+
+#tableSPI {
+    color: #000000;
+}
+
+#tableSPLN {
+    color: #000000;
+}
+
+#tableDPN {
+    color: #d3d3d3;
+}
+
+#talbeDPI {
+    color: #000000;
+}
+
+.table {
+    width : 100%; overflow-y : auto;
+    margin: 0px; padding : 1px;
+    border-collapse: collapse;
+}
+
+.table-column-title {
+    font-family: 'Helvetica';
+    margin : 0px;
+    padding : 0px;
+    color:darkblue;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    background-color: aliceblue;
+}
+
+.table-column-context {
+    font-family: 'Helvetica Neue';
+    margin : 0px;
+    padding : 0px;
+    text-align: center;
+    color: black;
+    transition: background .2s ease-in-out;
+}
+
+.table-column-context:hover {
+    background-color: aliceblue;
+}
+
+#title {
+    text-align: left;
+    padding-left:5px;
+}
+
+#subtitle {
+    text-align: left;
+    padding-left:5px;
+}
+
+.table-column-context a {
+    color:lightgray;
+    text-decoration: none;
+}
+
+.table-column-context #eventTitle {
+    color: black;
+    text-decoration: none;
+}
+
+.table-column-context:hover a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.table-column-context:hover #eventTitle:hover {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.table-column-context:hover #beginner:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.table-column-context:hover #normal:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.table-column-context:hover #hyper:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.table-column-context:hover #another:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.table-column-context:hover #insane:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.table-column-context:hover #youtube:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.table-column-context:link a:link {
+    color:lightgray;
+    text-decoration: none;
+}
+
+.table-column-context:visited a:visited {
+    color:lightgray;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+   
+    header {
+        height:250px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    article{
+        width:95%;
+        margin: 10px 2%; padding: 1%;
+        border-right: 0px;
+    }
+
+    aside, footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+   
+    header {
+        height:250px;
+    }
+
+    header h1 {
+        font-size: 33px;
+    }
+
+    table {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:550px) {
+ 
+    header{
+        height:200px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    table {
+        font-size: 75%;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+ 
+    header{
+        height:120px;
+    }
+
+    header h1 {
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0px 15px;
+    }
+
+    table {
+        font-size: 55%;
+    }
+}
